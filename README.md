@@ -147,6 +147,3 @@ E adiciona os comandos que quiseres.
 * no Windows, o PowerShell pode precisar ser aberto como administrador
 * o modo online depende de internet
 
----
-
-*OBS: Tudo feito por VibeCoding*
