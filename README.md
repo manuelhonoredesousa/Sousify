@@ -17,7 +17,7 @@ Quando executas o script:
    - pasta de programas (offline)
    - ficheiro de comandos (online)
 
-3. E vai instalando tudo um a um, sem correr tudo ao mesmo tempo
+3. E vai instalando.
 
 Ou seja, ele não avança para o próximo programa enquanto o anterior não terminar.
 
@@ -30,7 +30,7 @@ Ou seja, ele não avança para o próximo programa enquanto o anterior não term
 Abre o PowerShell na pasta do projeto e executa:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File install.ps1
+powershell -ExecutionPolicy Bypass -File start.ps1
 ```
 
 ## Modos disponíveis
@@ -39,9 +39,9 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 Se escolheres offline:
 
-- ele vai à pasta `WinApp`
-- pega em todos os programas lá dentro
-- instala um por um até acabar
+- ele vai à pasta `WinApp` (***Você deve meter os teus programas nessa pasta***)
+- ele fara um scanner dos programas
+- instalara com base no que você desejar
 
 Suporta:
 
@@ -52,20 +52,22 @@ Suporta:
 
 Se escolheres online:
 
-- ele lê o ficheiro `online.txt`
-- executa os comandos linha por linha
+- ele lê o ficheiro `/src/online.txt`(***Contem os comandos para instalar os Apps***)
+- em seguida instala com base na sua seleção
 
-Exemplo de comandos:
+Exemplo de comandos: 
+NomeApp|winget install --id Id.NomeApp -e 
+ou seja
 
 ```txt
-winget install --id Google.Chrome -e
-winget install --id Git.Git -e
-winget install --id Microsoft.VisualStudioCode -e
+Google Chrome|winget install --id Google.Chrome -e
+Microsoft Edge|winget install --id Microsoft.Edge -e
+
 ```
 
 ---
 
-# 🐧 Linux
+# 🐧 Linux (Beta)
 
 ## Como usar
 
@@ -105,7 +107,7 @@ sudo apt install -y nodejs
 
 ---
 
-# 🍎 macOS
+# 🍎 macOS (Beta)
 
 ## Como usar
 
@@ -184,7 +186,7 @@ E adiciona os comandos que quiseres.
 
 ---
 
-# ⚠️ Algumas notas
+# ⚠️ Att
 
 - alguns programas podem pedir permissões de administrador
 - no Linux, o sudo pode pedir password

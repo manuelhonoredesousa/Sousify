@@ -1,26 +1,20 @@
-﻿# Evitar erros silenciosos
-$ErrorActionPreference = "SilentlyContinue"
+﻿$ErrorActionPreference = "SilentlyContinue"
 
-# Caminho base
+
 $basePath = $PSScriptRoot
 $onlineFile = Join-Path $basePath "online.txt"
 
-# Verificar ficheiro
+
 if (!(Test-Path $onlineFile)) {
     Write-Host "online.txt não encontrado!" -ForegroundColor Red
     exit
 }
 
-# Ler aplicações
 $rawItems = Get-Content $onlineFile | Where-Object { $_ -ne "" }
 
-# Estrutura de dados
 $apps = @()
 
 foreach ($line in $rawItems) {
-
-    # Formato esperado:
-    # Nome Amigável|comando
 
     $parts = $line -split "\|"
 
@@ -34,7 +28,6 @@ foreach ($line in $rawItems) {
     }
 }
 
-# Estado inicial
 $currentIndex = 0
 $total = $apps.Count
 
@@ -182,7 +175,7 @@ while ($true) {
 
         if ($confirm -match "^[Ss]$") {
 
-            # Guardar resultado para o install.ps1
+            # usado para guardar resultado para o install.ps1
             $script:selectedApps = $selectedApps
 
             Clear-Host

@@ -52,7 +52,7 @@ if (-not $Apps -or $Apps.Count -eq 0) {
 
 Clear-Host
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "     INSTALANDO PROGRAMAS - WINGET" -ForegroundColor Cyan
+Write-Host "     INSTALLADOR ONLINE - WINGET" -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host ""
 

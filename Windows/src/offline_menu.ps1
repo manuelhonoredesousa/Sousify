@@ -11,7 +11,7 @@ if (!(Test-Path $appPath)) {
     exit 1
 }
 
-# Ler ficheiros offline
+# comando pAra ler ficheiros offline
 $files = Get-ChildItem $appPath | Where-Object {
     $_.Extension -eq ".exe" -or $_.Extension -eq ".msi"
 }
@@ -21,7 +21,7 @@ if ($files.Count -eq 0) {
     exit 1
 }
 
-# Criar lista de apps
+# comando pAra criar lista de apps
 $apps = @()
 
 foreach ($file in $files) {
@@ -119,7 +119,7 @@ function Get-Key {
     return $null
 }
 
-# LOOP PRINCIPAL
+
 while ($true) {
 
     Draw-Menu
