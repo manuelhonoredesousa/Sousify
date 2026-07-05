@@ -1,0 +1,80 @@
+# =========================
+# NAVEGADOR / INTERNET
+# =========================
+Google Chrome|winget install --id Google.Chrome -e
+Mozilla Firefox|winget install --id Mozilla.Firefox -e
+Microsoft Edge|winget install --id Microsoft.Edge -e
+
+# =========================
+# DEV ESSENCIAL
+# =========================
+Visual Studio Code|winget install --id Microsoft.VisualStudioCode -e
+Git|winget install --id Git.Git -e
+GitHub Desktop|winget install --id GitHub.GitHubDesktop -e
+
+Node.js LTS|winget install --id OpenJS.NodeJS.LTS -e
+Python 3.12|winget install --id Python.Python.3.12 -e
+Java JDK 21|winget install --id Oracle.JDK.21 -e
+
+# =========================
+# EDITORES / IDE
+# =========================
+Visual Studio 2022 Community|winget install --id Microsoft.VisualStudio.2022.Community -e
+Android Studio|winget install --id Google.AndroidStudio -e
+
+# =========================
+# DOCKER / BACKEND / API
+# =========================
+Docker Desktop|winget install --id Docker.DockerDesktop -e
+Postman|winget install --id Postman.Postman -e
+Insomnia|winget install --id Kong.Insomnia -e
+
+# =========================
+# BANCO DE DADOS
+# =========================
+MySQL Workbench|winget install --id Oracle.MySQLWorkbench -e
+DBeaver|winget install --id dbeaver.dbeaver -e
+MongoDB Compass|winget install --id MongoDB.Compass.Full -e
+
+# =========================
+# FERRAMENTAS WINDOWS
+# =========================
+7-Zip|winget install --id 7zip.7zip -e
+WinRAR|winget install --id RARLab.WinRAR -e
+PowerToys|winget install --id Microsoft.PowerToys -e
+Windows Terminal|winget install --id Microsoft.WindowsTerminal -e
+Notepad++|winget install --id Notepad++.Notepad++ -e
+
+# =========================
+# DESIGN / PRODUTIVIDADE
+# =========================
+Figma|winget install --id Figma.Figma -e
+Canva|winget install --id Canva.Canva -e
+
+# =========================
+# COMUNICAÇÃO
+# =========================
+Discord|winget install --id Discord.Discord -e
+Telegram|winget install --id Telegram.TelegramDesktop -e
+WhatsApp|winget install --id WhatsApp.WhatsApp -e
+Slack|winget install --id SlackTechnologies.Slack -e
+Zoom|winget install --id Zoom.Zoom -e
+
+# =========================
+# MULTIMÉDIA
+# =========================
+VLC Media Player|winget install --id VideoLAN.VLC -e
+OBS Studio|winget install --id OBSProject.OBSStudio -e
+Spotify|winget install --id Spotify.Spotify -e
+
+# =========================
+# UTILITÁRIOS ESSENCIAIS
+# =========================
+Google Drive|winget install --id Google.Drive -e
+Microsoft OneDrive|winget install --id Microsoft.OneDrive -e
+
+# =========================
+# EXTRA DEV TOOLS
+# =========================
+Power BI Desktop|winget install --id Microsoft.PowerBI -e
+Arduino IDE|winget install --id ArduinoSA.IDE.stable -e

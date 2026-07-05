@@ -1,4 +1,4 @@
-# 📦 Sousify (Windows + Linux)
+# 📦 Sousify
 
 Este projeto é basicamente um instalador automático que ajuda a configurar um computador de forma rápida, sem precisar instalar tudo manualmente.
 
@@ -8,11 +8,11 @@ Funciona tanto no Windows como no Linux.
 
 ---
 
-# 🧠 Como isto funciona
+# Como isto funciona
 
 Quando executas o script:
 
-1. Ele pergunta se queres instalação **offline ou online**
+1. Ele pergunta se queres Instalacao **offline ou online**
 2. Depois lê o que tiver sido configurado:
    - pasta de programas (offline)
    - ficheiro de comandos (online)

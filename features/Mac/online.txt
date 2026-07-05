@@ -1,0 +1,11 @@
+brew update
+brew install git
+brew install node
+brew install python
+brew install wget
+brew install curl
+brew install --cask google-chrome
+brew install --cask visual-studio-code
+brew install --cask postman
+brew install --cask docker
+brew cleanup
