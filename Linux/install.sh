@@ -14,7 +14,7 @@ OS_NAME=$(uname -a)
 
 clear
 echo "==================================="
-echo "   INSTALLER SYSTEM - LINUX"
+echo "   Sousify - LINUX"
 echo "   $OS_NAME"
 echo "==================================="
 echo ""

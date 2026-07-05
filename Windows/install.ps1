@@ -19,7 +19,7 @@ function Write-Log {
 # Header
 Clear-Host
 Write-Host "===================================" -ForegroundColor Cyan
-Write-Host "   INSTALLER SYSTEM - WINDOWS" -ForegroundColor Cyan
+Write-Host "   Sousify - WINDOWS" -ForegroundColor Cyan
 Write-Host "   $os" -ForegroundColor DarkGray
 Write-Host "===================================" -ForegroundColor Cyan
 Write-Host ""

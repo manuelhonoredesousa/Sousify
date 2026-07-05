@@ -14,9 +14,9 @@ Quando executas o script:
 
 1. Ele pergunta se queres instalação **offline ou online**
 2. Depois lê o que tiver sido configurado:
+   - pasta de programas (offline)
+   - ficheiro de comandos (online)
 
-   * pasta de programas (offline)
-   * ficheiro de comandos (online)
 3. E vai instalando tudo um a um, sem correr tudo ao mesmo tempo
 
 Ou seja, ele não avança para o próximo programa enquanto o anterior não terminar.
@@ -39,21 +39,21 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 Se escolheres offline:
 
-* ele vai à pasta `WinApp`
-* pega em todos os programas lá dentro
-* instala um por um até acabar
+- ele vai à pasta `WinApp`
+- pega em todos os programas lá dentro
+- instala um por um até acabar
 
 Suporta:
 
-* `.exe`
-* `.msi`
+- `.exe`
+- `.msi`
 
 ### - Online
 
 Se escolheres online:
 
-* ele lê o ficheiro `online.txt`
-* executa os comandos linha por linha
+- ele lê o ficheiro `online.txt`
+- executa os comandos linha por linha
 
 Exemplo de comandos:
 
@@ -81,20 +81,18 @@ Depois executar:
 ./install.sh
 ```
 
----
-
 ## Modos disponíveis
 
 ### - Offline
 
-* lê a pasta `LinApp`
-* instala ficheiros `.deb`
-* um de cada vez
+- lê a pasta `LinApp`
+- instala ficheiros `.deb`
+- um de cada vez
 
 ### - Online
 
-* lê o ficheiro `online.txt`
-* executa comandos normalmente no terminal
+- lê o ficheiro `online.txt`
+- executa comandos normalmente no terminal
 
 Exemplo:
 
@@ -103,6 +101,45 @@ sudo apt update
 sudo apt install -y git
 sudo apt install -y curl
 sudo apt install -y nodejs
+```
+
+---
+
+# 🍎 macOS
+
+## Como usar
+
+Primeiro dar permissão:
+
+```bash
+chmod +x install.sh
+```
+
+Depois executar:
+
+```bash
+./install.sh
+```
+
+## Modos disponíveis
+
+### - Offline
+
+- lê a pasta `MacApp`
+- instala ficheiros `.MacApp / .dmg / .app`
+- um de cada vez
+
+### - Online
+
+- lê o ficheiro `online.txt`
+- executa comandos normalmente no terminal
+
+Exemplo:
+
+```txt
+brew install git
+brew install node
+brew install --cask google-chrome
 ```
 
 ---
@@ -117,7 +154,6 @@ Só tens de colocar os ficheiros aqui:
 Windows/WinApp/
 ```
 
-
 ## - Linux offline
 
 Coloca aqui:
@@ -126,9 +162,17 @@ Coloca aqui:
 Linux/LinApp/
 ```
 
+## - Mac offline
+
+Coloca aqui:
+
+```
+Mac/MacApp/
+```
+
 ---
 
-## Online (ambos)
+## Online (todos)
 
 Edita o ficheiro:
 
@@ -142,8 +186,7 @@ E adiciona os comandos que quiseres.
 
 # ⚠️ Algumas notas
 
-* alguns programas podem pedir permissões de administrador
-* no Linux, o sudo pode pedir password
-* no Windows, o PowerShell pode precisar ser aberto como administrador
-* o modo online depende de internet
-
+- alguns programas podem pedir permissões de administrador
+- no Linux, o sudo pode pedir password
+- no Windows, o PowerShell pode precisar ser aberto como administrador
+- o modo online depende de internet
