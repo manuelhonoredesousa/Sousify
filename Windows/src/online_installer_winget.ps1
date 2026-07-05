@@ -46,7 +46,7 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
 }
 
 if (-not $Apps -or $Apps.Count -eq 0) {
-	Write-Host "Nenhuma aplicação selecionada." -ForegroundColor Yellow
+	Write-Host "Nenhuma aplicacao selecionada." -ForegroundColor Yellow
 	exit 0
 }
 
@@ -105,6 +105,7 @@ Write-Host ""
 Write-Host ""
 Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host "    INSTALACAO ONLINE FINALIZADA" -ForegroundColor Green
+Write-Host "    Sousify - https://github.com/manuelhonoredesousa/Sousify" -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host ""
 

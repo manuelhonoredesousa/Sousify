@@ -1,7 +1,7 @@
 Clear-Host
 
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "    Sousify" -ForegroundColor Cyan
+Write-Host "    Sousify - https://github.com/manuelhonoredesousa/Sousify" -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -38,7 +38,7 @@ if ($modo -eq "1") {
 
     if (-not $selectedApps -or $selectedApps.Count -eq 0) {
     Write-Host ""
-    Write-Host "Nenhuma aplicação selecionada no MENU ONLINE. A sair..." -ForegroundColor Red
+    Write-Host "Nenhuma aplicacao selecionada no MENU ONLINE. A sair..." -ForegroundColor Red
     exit
 }
 
@@ -62,7 +62,7 @@ elseif ($modo -eq "2") {
 
     if (-not $selectedApps -or $selectedApps.Count -eq 0) {
     Write-Host ""
-    Write-Host "Nenhuma aplicação selecionada no MENU OFFLINE. A sair..." -ForegroundColor Red
+    Write-Host "Nenhuma aplicacao selecionada no MENU OFFLINE. A sair..." -ForegroundColor Red
     exit
 }
 

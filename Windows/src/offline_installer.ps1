@@ -43,7 +43,7 @@ function Test-RegistryInstalled {
 }
 
 if (-not $Apps -or $Apps.Count -eq 0) {
-	Write-Host "Nenhuma aplicação selecionada." -ForegroundColor Yellow
+	Write-Host "Nenhuma aplicacao selecionada." -ForegroundColor Yellow
 	exit 0
 }
 
@@ -105,6 +105,7 @@ foreach ($app in $Apps) {
 Write-Host ""
 Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host "    INSTALAÇÃO OFFLINE FINALIZADA" -ForegroundColor Green
+Write-Host "    Sousify - https://github.com/manuelhonoredesousa/Sousify" -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Cyan
 
 Write-Log "===== OFFLINE INSTALLATION FINISHED ====="

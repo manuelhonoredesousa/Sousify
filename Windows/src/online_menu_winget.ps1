@@ -155,7 +155,7 @@ while ($true) {
         Write-Host ""
 
         if ($selectedApps.Count -eq 0) {
-            Write-Host "Nenhuma aplicação selecionada." -ForegroundColor Red
+            Write-Host "Nenhuma aplicacao selecionada." -ForegroundColor Red
             Start-Sleep -Seconds 2
             continue
         }
